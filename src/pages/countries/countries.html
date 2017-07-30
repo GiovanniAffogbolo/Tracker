@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Countries</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 id="titleh3" text-center>List of the most popular countries </h3>
+
+  <ion-card *ngFor="let country of response.response">
+   <ion-card-content>
+     <ion-row>
+      <ion-col col-12 text-center id="name"><strong>{{ country.name }}</strong></ion-col>
+     </ion-row>
+
+     <ion-grid>
+        <ion-row>
+       <ion-col col-6>
+         <ion-row><ion-col id="codes" text-center>Codes :</ion-col></ion-row>
+         <ion-row><ion-col text-center><strong>{{ country.code }}</strong></ion-col></ion-row>
+         <ion-row><ion-col text-center><strong>{{ country.code3 }}</strong></ion-col></ion-row>
+       </ion-col>
+
+       <ion-col col-6>
+         <ion-row><ion-col id="codes" text-center>Iso_numeric code .</ion-col></ion-row>
+         <ion-row><ion-col text-center><strong>{{ country.iso_numeric }}</strong></ion-col></ion-row>
+       </ion-col>
+        </ion-row>
+     </ion-grid>
+   </ion-card-content>
+  </ion-card>
+</ion-content>

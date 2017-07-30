@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Timezones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 id="titleh3" text-center>List of the most popular timezones </h3>
+
+  <ion-card *ngFor="let timez of response.response">
+   <ion-card-content>
+     <ion-row>
+      <ion-col col-12 text-center id="name"><strong>Country Code : {{ timez.country_code }}</strong></ion-col>
+      <ion-col col-12 text-center id="name"><strong>Timezone : {{ timez.timezone }}</strong></ion-col>
+     </ion-row>
+
+      <ion-row>
+      <ion-col col-6 text-center id="gmt"><strong> GMT : {{ timez.gmt }}</strong></ion-col>
+      <ion-col col-6 text-center id="dst"><strong>DST : {{ timez.dst }}</strong></ion-col>
+     </ion-row>
+
+     <ion-row>
+      <ion-col col-12 text-center id="name"><strong>Updated At</strong></ion-col>
+      <ion-col col-12 text-center>{{ timez.updated }}</ion-col>
+     </ion-row>
+
+
+    <!--<p>Le code du pays : {{ timez.country_code }}</p>
+    <p>Coordonnées : {{ timez.gmt }}, {{ timez.dst }}</p>
+    <p>Timezone : {{ timez.timezone }}</p>
+    <p>Dernière mise à jour : {{ timez.updated }}</p>-->
+   </ion-card-content>
+  </ion-card>
+</ion-content>

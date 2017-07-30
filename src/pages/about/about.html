@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      About us
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header text-center>
+      <strong><h1>Tracker</h1></strong>
+      <img src="assets/img/tracker.jpg" alt="Tracker">      
+    </ion-list-header>
+      <ion-item>
+        <strong><h1 text-center>Objectives</h1></strong>
+        <p>Tracker has been developped in order to :</p>
+        <ul>
+          <h4><li>Validate our Android Development lesson</li></h4>
+          <h4><li>Help people know any timezone</li></h4>
+        </ul>
+        
+        <h3>Tracker has been developped by a team of two</h3>
+        <ion-list>
+          <ion-item>
+            <ion-row>
+              <ion-col text-center col-8>
+            <ion-thumbnail item-start>
+              
+              <img id="gio" src="assets/img/gio.png" alt="Giovanni AFFOGBOLO">
+              
+            </ion-thumbnail>
+            </ion-col>
+              </ion-row>
+            <button item-end ion-button round (tap)="showGio()"><ion-icon name="plus"></ion-icon>Details</button>
+          </ion-item>
+        </ion-list>
+      </ion-item>
+
+    <ion-item text-center>
+      <strong><h4>App created using Ionic Framework</h4></strong>
+      <img src="assets/img/ionic.jpg" alt="Ionic Framework">
+      <strong><h4>and using IataCode as Api</h4></strong>
+      <img src="assets/img/iatacode.png" alt="Iata Code">
+    </ion-item>
+    <ion-item text-center>
+      <strong> Copyright July 2017</strong>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>

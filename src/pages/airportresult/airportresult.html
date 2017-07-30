@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Airport Results</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <br>
+  <br>
+  <br>
+  <h2 id="number" text-center>You have searched : <br><strong text-center>{{ answer }}</strong></h2>
+  <br>
+  <br><br><br><br>
+  <ion-grid>
+    <ion-row>
+        <ion-col col-5 text-center id="titre"><strong>Airport Code</strong></ion-col>
+      
+        <ion-col col-7 text-center id="titre"><strong>Airport Name</strong></ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <br>
+  <br>
+  
+  <ion-grid *ngFor="let airport of response.response">
+    
+      <ion-card>
+        <ion-card-content>
+          <ion-row>
+            <ion-col col-4 text-center><strong>{{ airport.code }}</strong></ion-col>
+            <ion-col col-8><strong>{{ airport.name }}</strong></ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    
+  </ion-grid>
+</ion-content>

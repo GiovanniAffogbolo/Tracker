@@ -1,0 +1,16 @@
+page-about {
+    .content-md {
+        background: none;
+
+        .item-md {
+            background: transparent;
+        }
+    }
+
+    ion-content{
+        #gio{
+            height: auto;
+            width: auto;
+        }
+    }
+}

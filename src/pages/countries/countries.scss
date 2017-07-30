@@ -1,0 +1,27 @@
+page-countries {
+
+    ion-content{
+
+        background-image: url('../assets/img/country.jpg');
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: 1.5;
+    }
+
+    #titleh3{
+        color: black;
+    }
+
+    #name{
+        color: midnightblue;
+        font-size: 20px;
+    }
+
+    #codes{
+        color: red;
+    }
+  
+}
+
+

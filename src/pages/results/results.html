@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Arrival Results</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 text-center>All flights going to : {{ destination }}</h2>
+<ion-grid>
+  <ion-row>
+    <ion-col text-center col-4><strong>Number</strong></ion-col>
+  
+    <ion-col text-center col-4><strong>Departure code</strong></ion-col>
+  
+    <ion-col text-center col-4><strong>Arrival code</strong></ion-col>
+  </ion-row>
+</ion-grid>
+<ion-card *ngFor="let route of response.response">
+   <ion-card-content>
+<ion-grid>
+  <ion-row>
+    <ion-col id="number" col-4><strong>{{ route.flight_number }}</strong></ion-col>
+  
+    <ion-col text-center col-4><strong>{{ route.departure }}</strong></ion-col>
+  
+    <ion-col text-center col-4><strong>{{ route.arrival }}</strong></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card-content>
+  </ion-card>
+</ion-content>

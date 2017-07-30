@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Routes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id = "first">
+  <h3 text-center>Do you know the code of your arrival airport ?</h3>
+  
+
+  <ion-list>
+  <ion-item>
+    <ion-label floating>Enter your airport's arrival code</ion-label>
+    <ion-input [(ngModel)]="destination"></ion-input>
+  </ion-item>
+  
+</ion-list>
+<div text-center>
+  <button ion-button round (tap)="showResults()">Search my flight</button>
+</div>
+</div>
+<div>
+  <br>
+  <h1 text-center>Some Tips</h1>
+</div>
+<div id = "first">
+  <h3 text-center>This page will help you</h3>
+  <ul>
+    <li>You will search routes by arrival code</li>
+    <li>You will search routes by departure code</li>
+    <li>If you don't know a code, you can check it at airports page</li>
+  </ul>
+  <br>
+  <ion-list>
+  <ion-item>
+    <ion-label floating>Enter your airport's departure code</ion-label>
+    <ion-input [(ngModel)]="depart"></ion-input>
+  </ion-item>
+  
+</ion-list>
+<div text-center>
+  <button ion-button round (tap)="showDepart()">Search my flight</button>
+</div>
+
+  <h6>Optimise your flight's routes research</h6>
+  
+</div>
+
+</ion-content>

@@ -1,3 +1,15 @@
 page-home {
+    ion-content{
+        #title{
+            color: navy;
+        }
 
+        #taille{
+            height: 113.5px;
+        }
+
+        #back{
+            background-clip: black;
+        }
+    }
 }
