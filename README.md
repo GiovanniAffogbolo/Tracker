@@ -26,8 +26,7 @@ Tracker has been developped by using an API and a framework
 
 ## About Tracker
 
-Tracker has been developped by a team of two :
-- [Giovanni AFFOGBOLO (me)](https://github.com/GiovanniAffogbolo)
-- [Amen GHEZO]
+Tracker has been developped by :
+- [Giovanni AFFOGBOLO](https://github.com/GiovanniAffogbolo)
 
 Tracker is totally free.
